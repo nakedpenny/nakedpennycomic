@@ -39,6 +39,9 @@
         <hr id="post-body-break">
         <div id="post-body">
 {{ post_html }}
+<p>Art by Jonas
+<p>Story by Stoker
+<p>Like this comic?  Consider <a href="http://www.patreon.com/nakedpenny">supporting us on Patreon</a> for early updates and more!
         </div>
     </div>
 {%- endblock %}
