@@ -45,7 +45,7 @@ div#comic-page {
 }
 
 a.navigation-button {
-    color: indianred;  /* Color of the navigation bar hyperlinks */
+    color: E99EC0;  /* Color of the navigation bar hyperlinks */
     font-size: 18pt;  /* Size of the navigation bar hyperlinks */
     text-decoration: none;  /* Delete this if you want your navigation links to be underlined */
 }
