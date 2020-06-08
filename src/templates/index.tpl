@@ -1,44 +1,20 @@
 {% extends "base.tpl" %}
-{%- block head %}
-    {{- super() }}
-    <link rel="next" href="/{{ base_dir }}/comic/{{ next_id }}.html">
-{%- endblock %}
 {%- block content %}
-    <div id="comic-page">
-        <a href="/{{ base_dir }}/comic/{{ next_id }}.html#comic-page">
-            <img id="comic-image" src="/{{ base_dir }}/{{ comic_path }}" title="{{ alt_text }}"/>
-        </a>
-    </div>
+
+    <h1>ADULTS ONLY BEYOND THIS POINT!!</h1>
+
+    <p>Welcome, friends, to Naked Penny!  This is a silly and sexy comic which contains some NAUGHTY CONTENT (goodness me)!</p>
+    
+    <p>By proceeding any further, you certify that you are of the legal age to view nude and lewd content in your location.</p>
+    
+    <p>If you are NOT legally allowed to view such shenanigans, please exit out of the site.  Otherwise...
+
 
     <div id="navigation-bar">
-    {% if first_id == current_id %}
-        <a class="navigation-button-disabled">First</a>
-        <a class="navigation-button-disabled">Previous</a>
-    {% else %}
-        <a class="navigation-button" href="/{{ base_dir }}/comic/{{ first_id }}.html#comic-page">First</a>
-        <a class="navigation-button" href="/{{ base_dir }}/comic/{{ previous_id }}.html#comic-page">Previous</a>
-    {% endif %}
-    {% if last_id == current_id %}
-        <a class="navigation-button-disabled">Next</a>
-        <a class="navigation-button-disabled">Last</a>
-    {% else %}
-        <a class="navigation-button" href="/{{ base_dir }}/comic/{{ next_id }}.html#comic-page">Next</a>
-        <a class="navigation-button" href="/{{ base_dir }}/comic/{{ last_id }}.html#comic-page">Last</a>
-    {% endif %}
+        <a class="navigation-button" href="comic/{{ first_id }}.html#comic-page">Click HERE to read the comic from the first page</a>
+        <a class="navigation-button" href="comic/{{ last_id }}.html#comic-page">Click HERE to read from the most recent page</a>
     </div>
 
-    <div id="blurb">
-        <h1 id="page-title">{{ page_title }}</h1>
-        <div id="post-date">Posted on: {{ post_date }}</div>
-        <div id="tags">
-        Tags:
-        {%- for tag in tags %}
-            <a class="tag-link" href="/{{ base_dir }}/tagged.html?tag={{ tag }}">{{ tag }}</a>{% if not loop.last %}, {% endif %}
-        {%- endfor %}
-        </div>
-        <hr id="post-body-break">
-        <div id="post-body">
-{{ post_html }}
-        </div>
-    </div>
+    <p>Checkout the links bar above for links to my shop and patreon and other ways for you to give me money.</p>
+
 {%- endblock %}
