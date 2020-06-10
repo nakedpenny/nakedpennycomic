@@ -15,6 +15,4 @@
         <a class="navigation-button" href="comic/{{ last_id }}.html#comic-page">Click HERE to read from the most recent page</a>
     </div>
 
-    <p>Checkout the links bar above for links to my shop and patreon and other ways for you to give me money.</p>
-
 {%- endblock %}
